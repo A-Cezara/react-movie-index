@@ -13,9 +13,12 @@ export default function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/react-movie-index" element={<HomePage />} />
 
-        <Route path="/movie/:movieId" element={<MovieDetail />}>
+        <Route
+          path="/react-movie-index/movie/:movieId"
+          element={<MovieDetail />}
+        >
           <Route path="cast" element={<Cast />} />
           <Route path="reviews" element={<Reviews />} />
         </Route>
