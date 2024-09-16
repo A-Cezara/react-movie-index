@@ -1,0 +1,18 @@
+div {
+}
+
+.button {
+  color: black;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  height: 40px;
+  line-height: 40px;
+}
+
+.button:hover {
+  color: red;
+}

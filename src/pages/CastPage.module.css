@@ -1,0 +1,38 @@
+.castGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.castItem {
+  max-width: 150px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.castItem img {
+  max-width: 150px;
+  height: auto;
+}
+
+.noImage {
+  width: 150px;
+  height: 225px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cast-item {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cast-item {
+    flex: 1 1 100%;
+  }
+}
