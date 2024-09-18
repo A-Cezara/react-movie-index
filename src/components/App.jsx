@@ -1,6 +1,7 @@
 import React from 'react';
 
 import HomePage from '../pages/HomePage';
+import MovieSearchPage from 'pages/MovieSearchPage';
 import MovieDetail from '../pages/MovieDetailPage';
 import Cast from '../pages/CastPage';
 import Reviews from '../pages/ReviewsPage';
@@ -14,6 +15,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/movies" element={<MovieSearchPage />} />
 
         <Route path="/movie/:movieId" element={<MovieDetail />}>
           <Route path="cast" element={<Cast />} />
